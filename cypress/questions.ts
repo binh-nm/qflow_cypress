@@ -1,8 +1,8 @@
 import { Before, Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 //import { DataTable } from 'cucumber';
-import { baseUrl, questionPageUrl } from '../common/constans';
-import { testData } from '../../fixtures/test-data.json';
-import { getFieldType, fillField } from '../common/utils';
+import { baseUrl, questionPageUrl } from './constants';
+import { testData } from './fixtures/test-data.json';
+import { getFieldType, fillField } from './utils';
 
 // By using the tag '@english' above your scenario,
 // cypress will visit the page in english

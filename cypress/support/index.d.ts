@@ -1,6 +1,5 @@
 // load the global Cypress types
 /// <reference types="cypress" />
-
 // load the 3rd party command
 
 import './commands';
