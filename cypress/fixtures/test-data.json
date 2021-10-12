@@ -1,0 +1,306 @@
+{
+    "testData": {
+      "carbrand": {
+        "question_label": {
+          "thai": "",
+          "english": "What is your car brand?"
+        },
+        "values": {
+          "thai": [
+            ""
+          ],
+          "english": [
+            "Toyota"
+          ]
+        }
+      },
+      "carmodel": {
+        "question_label": {
+          "thai": "",
+          "english": "What is your car model?"
+        },
+        "values": {
+          "thai": [
+            ""
+          ],
+          "english": ["Corolla Altis"]
+        }
+      },
+      "caryear": {
+        "question_label": {
+          "thai": "",
+          "english": "Which year was your car manufactured? "
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "2021",
+            "2020",
+            "2019"
+          ]
+        }
+      },
+      "enginesize": {
+        "question_label": {
+          "thai": "",
+          "english": "What is the engine size?"
+        },
+        "values": {
+          "thai": "",
+          "english": ["1.60", "1.80"]
+        }
+      },
+      "submodel": {
+        "question_label": {
+          "thai": "",
+          "english": "Which car is it?"
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "Toyota Corolla Altis 2020 Sep Petrol 1.60 Automatic 4 Doors G Sedan"
+          ]
+        }
+      },
+      "carmodify": {
+        "question_label": {
+          "thai": "",
+          "english": "Did you modify your car?"
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "Yes",
+            "No"
+          ]
+        }
+      },
+      "dashcam": {
+        "question_label": {
+          "thai": "",
+          "english": "Do you have a dashboard cam?"
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "Yes",
+            "No"
+          ]
+        }
+      },
+      "drivingpurpose": {
+        "question_label": {
+          "thai": "",
+          "english": "What is your driving purpose?"
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "Personal usage",
+            "Comercial usage"
+          ]
+        }
+      },
+      "province": {
+        "question_label": {
+          "thai": "",
+          "english": "Please select your province"
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "Select other provinces",
+            "Bangkok",
+            "Samut Prakan",
+            "Nonthaburi",
+            "Pathum Thani",
+            "Phra Nakhon Si Ayutthaya",
+            "Ang Thong",
+            "Lop Buri",
+            "Sing Buri",
+            "Chai Nat",
+            "Saraburi",
+            "Chon Buri",
+            "Rayong",
+            "Chanthaburi",
+            "Trat",
+            "Chachoengsao",
+            "Prachin Buri",
+            "Nakhon Nayok",
+            "Sa Kaeo",
+            "Nakhon Ratchasima",
+            "Buri Ram",
+            "Surin",
+            "Si Sa Ket",
+            "Ubon Ratchathani",
+            "Yasothon",
+            "Chaiyaphum",
+            "Amnat Charoen",
+            "Bueng Kan",
+            "Nong Bua Lam Phu",
+            "Khon Kaen",
+            "Udon Thani",
+            "Loei",
+            "Nong Khai",
+            "Maha Sarakham",
+            "Roi Et",
+            "Kalasin",
+            "Sakon Nakhon",
+            "Nakhon Phanom",
+            "Mukdahan",
+            "Chiang Mai",
+            "Lamphun",
+            "Lampang",
+            "Uttaradit",
+            "Phrae",
+            "Nan",
+            "Phayao",
+            "Chiang Rai",
+            "Mae Hong Son",
+            "Nakhon Sawan",
+            "Uthai Thani",
+            "Kamphaeng Phet",
+            "Tak",
+            "Sukhothai",
+            "Phitsanulok",
+            "Phichit",
+            "Phetchabun",
+            "Ratchaburi",
+            "Kanchanaburi",
+            "Suphan Buri",
+            "Nakhon Pathom",
+            "Samut Sakhon",
+            "Samut Songkhram",
+            "Phetchaburi",
+            "Prachuap Khiri Khan",
+            "Nakhon Si Thammarat",
+            "Krabi",
+            "Phangnga",
+            "Phuket",
+            "Surat Thani",
+            "Ranong",
+            "Chumphon",
+            "Songkhla",
+            "Satun",
+            "Trang",
+            "Phatthalung",
+            "Pattani",
+            "Yala",
+            "Narathiwat"
+          ]
+        }
+      },
+      "phone": {
+        "label": {
+          "thai": "",
+          "english": "What is your phone number?"
+        },
+        "placeholder": {
+          "thai": "",
+          "english": "Ex: 0860000000"
+        },
+        "values": {
+          "thai": "",
+          "english": "0999999999"
+        }
+      },
+      "next_phone": {
+        "values": { "thai": "", "english": "Next" }
+      },
+      "fname": {
+        "label": {
+          "thai": "",
+          "english": "What is your first name? "
+        },
+        "values": {
+          "thai": "",
+          "english": "QAA"
+        }
+      },
+      "lname": {
+        "label": {
+          "thai": "",
+          "english": "What is your last name? "
+        },
+        "values": {
+          "thai": "",
+          "english": "Test"
+        }
+      },
+      "next_name": {
+        "values": { "thai": "", "english": "Next" }
+      },
+      "email": {
+        "label": {
+          "thai": "",
+          "english": "What is your email?"
+        },
+        "placeholder": {
+          "thai": "",
+          "english": "Ex: example@gmail.com"
+        },
+        "values": {
+          "thai": "",
+          "english": "qaa@testemail.com"
+        }
+      },
+      "next_email": {
+        "values": { "thai": "", "english": "Next" }
+      },
+      "gender": {
+        "label": {
+          "thai": "",
+          "english": "What is your gender? "
+        },
+        "values": {
+          "thai": "",
+          "english": ["Male","Female"]
+        }
+      },
+      "DoB": {
+        "label": {
+          "thai": "",
+          "english": "What is your date of birth? "
+        },
+        "placeholder": {
+          "thai": "",
+          "english": "DD / MM / YYYY"
+        },
+        "values": {
+          "thai": "",
+          "english": "27/03/1989"
+        }
+      },
+      "insurer": {
+        "question_label": {
+          "thai": "",
+          "english": "What is your current insurer? "
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "I don't have car insurance"
+          ]
+        }
+      },
+      "policy_start": {
+        "question_label": {
+          "thai": "",
+          "english": "When do you want your policy to start?"
+        },
+        "values": {
+          "thai": "",
+          "english": [
+            "I don't have car insurance"
+          ]
+        }
+      },
+      "tc": {
+        "values": {
+          "thai": "",
+          "english": ["Consent", "No consent"]
+        }
+      }
+    }
+  }
+  

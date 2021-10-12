@@ -1,0 +1,20 @@
+{
+    //"extends": "../tsconfig.json",
+    "include": [
+        "./**/*.ts",
+        "integration/*.ts",
+        "support/*.ts",
+        "../node_modules/cypress"
+      ],
+    "exclude": [],
+    "compilerOptions": {
+      "baseUrl": "cypress",  
+      "types": ["cypress","node"],
+      "lib": ["es2017", "dom"],
+      "isolatedModules": false,
+      "allowJs": true,
+      "noEmit": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true    
+    }    
+}

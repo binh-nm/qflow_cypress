@@ -1,0 +1,25 @@
+{
+    "fieldTypes": {
+      "select": [
+        "carbrand",
+        "carmodel",
+        "caryear",
+        "enginesize",
+        "submodel",
+        "carmodify",
+        "dashcam",
+        "drivingpurpose",
+        "province",
+        "gender",
+        "insurer",
+        "policy_start",
+        "insurance_kind",
+        "consent"
+      ],
+      "multiSelect": ["insurance_type"],
+      "button": ["next_email", "next_name", "next_phone", "show_quote","next_dob"],
+      "text": ["name", "surname", "phone", "email", "DoB"],
+      "contain": ["tc"]
+    }
+  }
+  
