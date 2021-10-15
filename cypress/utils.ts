@@ -1,4 +1,5 @@
 import { fieldTypes } from './fixtures/field-type.json';
+import { baseUrl,quotePageUrl } from './constants';
 
 /**
  * getFieldType is a method to determine the field type of the input element.
@@ -6,7 +7,7 @@ import { fieldTypes } from './fixtures/field-type.json';
  * The return value is the fieldType string.
  * @param {string} fieldName - the name of the field.
  */
-export function getFieldType(fieldName: string): string {
+export function getFieldType(fieldName: string): any {
   return Object.keys(fieldTypes).find((key) =>
     fieldTypes[key].includes(fieldName)
   );
@@ -31,7 +32,7 @@ export function fillField(
 ) {
   switch (fieldType) {
     case 'select': {
-      const selector = `select[name="${testDataKeys[index]}"]`;
+      const selector = `select[data-testid="${testDataKeys[index]}"]`;
       cy.get(selector)
         .should('be.visible', { timeout: 7000 })
         .select(testDataValues[index].values[language][1], {
@@ -98,20 +99,30 @@ export function fillFieldWithValue(
       });
       break;
     }
+    case 'radio': {
+      const selector = `label[for="${testDataValue}"]`;
+      cy.get(selector).click({
+        timeout: 10000
+      });
+      break;
+    }
     case 'multiSelect':
-      cy.get('div[class="multi-select"]')
+      cy.get(`div[id="${testDataKey}"]`)
         .should('be.visible')
         .within(() => {
-          cy.get('h6').contains(testDataValue).click();
+          cy.get('h5').contains(testDataValue).click();
         });
+      break;
+    case 'next_button':
+      cy.get(`#${testDataKey.slice(5)}`)
+      .should('be.visible')
+      .within(() => {
+        cy.get('button').should('have.text', testDataValue).click();
+      });
       break;
     case 'button':
-      cy.get(`#${testDataKey.slice(5)}`)
-        .should('be.visible')
-        .within(() => {
-          cy.get('button').should('have.text', testDataValue).click();
-        });
-      break;
+        cy.get('button[id="btn-marketing-consent"]').should('have.text', testDataValue).click();
+      break;  
     case 'text':
       cy.get(`input[name="${testDataKey}"]`)
         .should('be.visible')
@@ -127,3 +138,34 @@ export function fillFieldWithValue(
       break;
   }
 }
+
+ export function checkPackages(
+  testDataValue: string
+ ) {
+   const selector = `div[data-testid=${testDataValue}]`;
+   cy.get(selector).should('be.visible');
+ }
+
+ export function confirmContactInfo(
+  fieldType: string,
+  testDataKey: string,
+  testDataValue: string
+ ) {
+   switch(fieldType)
+   {
+    case 'text':
+      cy.get(`input[name="${testDataKey}"]`)
+        .should('have.value',testDataValue);
+      break;
+    case 'next_button':
+      cy.get(`#${testDataKey.slice(5)}`)
+      .should('be.visible')
+      .within(() => {
+        cy.get('button').should('have.text', testDataValue).click();
+      });
+      break;  
+    default:
+      cy.log('field_type is invalid');
+      break;
+   }
+ }
