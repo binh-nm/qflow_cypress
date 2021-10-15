@@ -1,5 +1,6 @@
 {
   "baseUrl": "./cypress",
+  //"extends": "../tsconfig.json",
   "include": [
     "./**/*.ts",
     "integration/*.ts",
