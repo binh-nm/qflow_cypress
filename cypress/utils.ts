@@ -1,4 +1,4 @@
-import { fieldTypes } from '../../fixtures/field-type.json';
+import { fieldTypes } from './fixtures/field-type.json';
 
 /**
  * getFieldType is a method to determine the field type of the input element.

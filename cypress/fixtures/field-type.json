@@ -1,24 +1,39 @@
 {
     "fieldTypes": {
       "select": [
-        "carbrand",
-        "carmodel",
-        "caryear",
-        "enginesize",
-        "submodel",
-        "carmodify",
-        "dashcam",
-        "drivingpurpose",
-        "province",
-        "gender",
-        "insurer",
-        "policy_start",
-        "insurance_kind",
-        "consent"
+        "car_brand",
+        "car_model",
+        "car_year",
+        "car_province",
+        "insurer_name"
       ],
-      "multiSelect": ["insurance_type"],
-      "button": ["next_email", "next_name", "next_phone", "show_quote","next_dob"],
-      "text": ["name", "surname", "phone", "email", "DoB"],
+      "radio": [
+        "car_enginedescription",
+        "car_submodel",
+        "car_modify",
+        "car_dashcam",
+        "car_driving_purpose",
+        "customer_gender",
+        "insurance_kind",
+        "policy_start"
+      ],
+      "multiSelect": ["insurance_voluntary"],
+      "next_button": [
+        "next_customer_phone",
+        "next_customer_email",
+        "next_customer_first_name",
+        "show_quote",
+        "next_customer_dob",
+        "next_insurance_voluntary"
+      ],
+      "button": ["Show_Quotes"],
+      "text": [
+        "customer_first_name",
+        "customer_last_name",
+        "customer_phone",
+        "customer_email",
+        "customer_dob"
+      ],
       "contain": ["tc"]
     }
   }

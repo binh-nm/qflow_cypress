@@ -1,6 +1,6 @@
 {
     "testData": {
-      "carbrand": {
+      "car_brand": {
         "question_label": {
           "thai": "",
           "english": "What is your car brand?"
@@ -10,11 +10,71 @@
             ""
           ],
           "english": [
-            "Toyota"
+            "Select other car brands",
+            "Alfa Romeo",
+            "Aston Martin",
+            "Audi",
+            "Bentley",
+            "BMW",
+            "Chery",
+            "Chevrolet",
+            "Chrysler",
+            "Citroen",
+            "Daewoo",
+            "Daihatsu",
+            "DFM",
+            "Ferrari",
+            "Fiat",
+            "Ford",
+            "Foton",
+            "Holden",
+            "Honda",
+            "Hummer",
+            "Hyundai",
+            "Isuzu",
+            "Jaguar",
+            "Jeep",
+            "Kia",
+            "Lamborghini",
+            "Land Rover",
+            "Lexus",
+            "Lotus",
+            "Maserati",
+            "Maxus",
+            "Mazda",
+            "McLaren",
+            "Mercedes-Benz",
+            "MG",
+            "Mini",
+            "Mitsubishi",
+            "Mitsuoka",
+            "Naza",
+            "Nissan",
+            "Opel",
+            "Peugeot",
+            "Polarsun",
+            "Porsche",
+            "Proton",
+            "Renault",
+            "Rolls-Royce",
+            "Rover",
+            "Saab",
+            "Seat",
+            "Skoda",
+            "Smart",
+            "Spyker",
+            "Ssangyong",
+            "Subaru",
+            "Suzuki",
+            "Tata",
+            "Toyota",
+            "TR",
+            "Volkswagen",
+            "Volvo"
           ]
         }
       },
-      "carmodel": {
+      "car_model": {
         "question_label": {
           "thai": "",
           "english": "What is your car model?"
@@ -23,10 +83,16 @@
           "thai": [
             ""
           ],
-          "english": ["Corolla Altis"]
+          "english": [
+            "147",
+            "156",
+            "159",
+            "166",
+            "GT"
+          ]
         }
       },
-      "caryear": {
+      "car_year": {
         "question_label": {
           "thai": "",
           "english": "Which year was your car manufactured? "
@@ -40,7 +106,7 @@
           ]
         }
       },
-      "enginesize": {
+      "car_enginedescription": {
         "question_label": {
           "thai": "",
           "english": "What is the engine size?"
@@ -50,7 +116,7 @@
           "english": ["1.60", "1.80"]
         }
       },
-      "submodel": {
+      "car_submodel": {
         "question_label": {
           "thai": "",
           "english": "Which car is it?"
@@ -62,7 +128,7 @@
           ]
         }
       },
-      "carmodify": {
+      "car_modify": {
         "question_label": {
           "thai": "",
           "english": "Did you modify your car?"
@@ -75,7 +141,7 @@
           ]
         }
       },
-      "dashcam": {
+      "car_dashcam": {
         "question_label": {
           "thai": "",
           "english": "Do you have a dashboard cam?"
@@ -88,7 +154,7 @@
           ]
         }
       },
-      "drivingpurpose": {
+      "car_driving_purpose": {
         "question_label": {
           "thai": "",
           "english": "What is your driving purpose?"
@@ -101,7 +167,7 @@
           ]
         }
       },
-      "province": {
+      "car_province": {
         "question_label": {
           "thai": "",
           "english": "Please select your province"
@@ -190,7 +256,7 @@
           ]
         }
       },
-      "phone": {
+      "customer_phone": {
         "label": {
           "thai": "",
           "english": "What is your phone number?"
@@ -207,7 +273,7 @@
       "next_phone": {
         "values": { "thai": "", "english": "Next" }
       },
-      "fname": {
+      "customer_first_name": {
         "label": {
           "thai": "",
           "english": "What is your first name? "
@@ -217,7 +283,7 @@
           "english": "QAA"
         }
       },
-      "lname": {
+      "customer_last_name": {
         "label": {
           "thai": "",
           "english": "What is your last name? "
@@ -230,7 +296,7 @@
       "next_name": {
         "values": { "thai": "", "english": "Next" }
       },
-      "email": {
+      "customer_email": {
         "label": {
           "thai": "",
           "english": "What is your email?"
@@ -247,7 +313,7 @@
       "next_email": {
         "values": { "thai": "", "english": "Next" }
       },
-      "gender": {
+      "customer_gender": {
         "label": {
           "thai": "",
           "english": "What is your gender? "
@@ -257,7 +323,7 @@
           "english": ["Male","Female"]
         }
       },
-      "DoB": {
+      "customer_dob": {
         "label": {
           "thai": "",
           "english": "What is your date of birth? "
@@ -271,7 +337,7 @@
           "english": "27/03/1989"
         }
       },
-      "insurer": {
+      "insurer_name": {
         "question_label": {
           "thai": "",
           "english": "What is your current insurer? "
