@@ -84,7 +84,7 @@ When(
     .within(() => {
       cy.get('button[data-testid=buy-now]')
       .should('be.visible')
-      .click()
+      .click();
     });
     cy.wait(5000);
   }
@@ -110,12 +110,13 @@ And(
 
 Then(
   'Verify user information show in Thank You page', () => {
-    cy.wait(10000);
+    cy.wait(5000);
     cy.get('div[class=ConfirmDetails_item__FAUoi]')
     .should('be.visible')
     .within(() => {
-      cy.get('span:second')
-      .should('have.text','0999999999');
+      cy.get('span')
+      .contains('0999999999')
+      .should('be.visible');
     })
   }
 );
