@@ -5,12 +5,22 @@ import { cases } from '../../../../fixtures/car-qflow-questions.json';
 import { testData } from '../../../../fixtures/test-data.json';
 
 Before({ tags: '@english' }, () => {
-  cy.visit(`${baseUrl}en/${questionPageUrl}`);
+  cy.visit(`${baseUrl}en/${questionPageUrl}`, {
+    auth: {
+      username: '1423',
+      password: '1423',
+    },
+  });
 });
 
 Before({ tags: '@thai' }, () => {
-  cy.visit(`${baseUrl}/${questionPageUrl}`);
   cy.reload();
+  cy.visit(`${baseUrl}${questionPageUrl}`, {
+    auth: {
+      username: '1423',
+      password: '1423',
+    },
+  }); 
 });
 
 // Before(() => {
@@ -27,30 +37,6 @@ When(
       const fieldType = getFieldType(keys[index]);
       fillFieldWithValue(fieldType, keys[index], values[index]);
     }
-  }
-);
-
-And(
-  'User navigate to Quotes page EN with basic auth', () => {
-    cy.visit(`${baseUrl}en/${quotePageUrl}`, {
-      auth: {
-        username: '1423',
-        password: '1423',
-      },
-    });
-    cy.wait(5000);
-  }
-);
-
-And(
-  'User navigate to Quotes page TH with basic auth', () => {
-    cy.visit(`${baseUrl}${quotePageUrl}`, {
-      auth: {
-        username: '1423',
-        password: '1423',
-      },
-    });
-    cy.wait(5000);
   }
 );
 
@@ -124,6 +110,7 @@ And(
 
 Then(
   'Verify user information show in Thank You page', () => {
+    cy.wait(10000);
     cy.get('div[class=ConfirmDetails_item__FAUoi]')
     .should('be.visible')
     .within(() => {

@@ -1,12 +1,11 @@
 Feature: car-qflow
 
   Background: Smoke test Car Questions flow
-    Given I intercept the post request
+    # Given I intercept the post request
 
   @english
   Scenario: EN - Answer all questions then go to Quotes page 
     When I answer questions with values of test case 'car_questions_ENG'
-    And User navigate to Quotes page EN with basic auth
     Then expect the url to include 'car-insurance/quotes'
     Then Check visibility of packages with value of test case 'packages'
 
@@ -23,23 +22,22 @@ Feature: car-qflow
     # And User navigate to Thank You page
     Then Verify user information show in Thank You page
 
-  @thai
-  Scenario: TH - Answer all questions then go to Quotes page 
-    When I answer questions with values of test case 'car_questions_THAI'
-    And User navigate to Quotes page TH with basic auth
-    Then expect the url to include 'car-insurance/quotes'
-    And Check visibility of packages with value of test case 'packages'
+  # @thai
+  # Scenario: TH - Answer all questions then go to Quotes page 
+  #   When I answer questions with values of test case 'car_questions_THAI'
+  #   Then expect the url to include 'car-insurance/quotes'
+  #   And Check visibility of packages with value of test case 'packages'
 
-  Scenario: TH - Use filter and check packages
-    When User change filter option in TH
-    Then Check visibility of packages with value of test case 'filter_packages'
+  # Scenario: TH - Use filter and check packages
+  #   When User change filter option in TH
+  #   Then Check visibility of packages with value of test case 'filter_packages'
 
-  Scenario: TH - Select a package then go to Confirm page
-    When User click on Proceed button with value of test case 'packages'
-    Then expect the url to include 'car-insurance/confirm'
+  # Scenario: TH - Select a package then go to Confirm page
+  #   When User click on Proceed button with value of test case 'packages'
+  #   Then expect the url to include 'car-insurance/confirm'
 
-  Scenario: TH - User confirm contact info and go to Thank You page
-    When User confirm contact info with value of test case 'confirm_contact_TH'
-    # And User navigate to Thank You page
-    Then Verify user information show in Thank You page  
+  # Scenario: TH - User confirm contact info and go to Thank You page
+  #   When User confirm contact info with value of test case 'confirm_contact_TH'
+  #   # And User navigate to Thank You page
+  #   Then Verify user information show in Thank You page  
 

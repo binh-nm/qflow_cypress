@@ -15,9 +15,10 @@
         "car_driving_purpose",
         "customer_gender",
         "insurance_kind",
-        "policy_start"
+        "policy_start",
+        "insurance_voluntary"
       ],
-      "multiSelect": ["insurance_voluntary"],
+      "multiSelect": [],
       "next_button": [
         "next_customer_phone",
         "next_customer_email",

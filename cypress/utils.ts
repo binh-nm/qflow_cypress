@@ -104,6 +104,7 @@ export function fillFieldWithValue(
       cy.get(selector).click({
         timeout: 10000
       });
+      // cy.wait(1000);
       break;
     }
     case 'multiSelect':
@@ -112,6 +113,7 @@ export function fillFieldWithValue(
         .within(() => {
           cy.get('h5').contains(testDataValue).click();
         });
+        // cy.wait(1000);
       break;
     case 'next_button':
       cy.get(`#${testDataKey.slice(5)}`)
@@ -119,19 +121,23 @@ export function fillFieldWithValue(
       .within(() => {
         cy.get('button').should('have.text', testDataValue).click();
       });
+      // cy.wait(1000);
       break;
     case 'button':
         cy.get('button[id="btn-marketing-consent"]').should('have.text', testDataValue).click();
+        cy.wait(10000);
       break;  
     case 'text':
       cy.get(`input[name="${testDataKey}"]`)
         .should('be.visible')
         .type(testDataValue)
         .blur();
+      // cy.wait(1000);
       cy.get(`label[for="${testDataKey}"]`).click();
       break;
     case 'contain':
       cy.get('label').contains(testDataValue).should('be.visible').click();
+      // cy.wait(1000);
       break;
     default:
       cy.log('field_type is invalid');
@@ -156,6 +162,7 @@ export function fillFieldWithValue(
     case 'text':
       cy.get(`input[name="${testDataKey}"]`)
         .should('have.value',testDataValue);
+      cy.get(`label[for="${testDataKey}"]`).click();
       break;
     case 'next_button':
       cy.get(`#${testDataKey.slice(5)}`)
@@ -163,6 +170,7 @@ export function fillFieldWithValue(
       .within(() => {
         cy.get('button').should('have.text', testDataValue).click();
       });
+      cy.wait(1500);
       break;  
     default:
       cy.log('field_type is invalid');
