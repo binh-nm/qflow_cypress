@@ -16,7 +16,10 @@
         "customer_gender",
         "insurance_kind",
         "policy_start",
-        "insurance_voluntary"
+        "insurance_voluntary",
+        "car_number_of_doors",
+        "car_cab_type",
+        "car_registered_seats"
       ],
       "multiSelect": [],
       "next_button": [
@@ -25,7 +28,8 @@
         "next_customer_first_name",
         "show_quote",
         "next_customer_dob",
-        "next_insurance_voluntary"
+        "next_insurance_voluntary",
+        "next_policy_holder_dob"
       ],
       "button": ["Show_Quotes"],
       "text": [
@@ -33,7 +37,8 @@
         "customer_last_name",
         "customer_phone",
         "customer_email",
-        "customer_dob"
+        "customer_dob",
+        "policy_holder_dob"
       ],
       "contain": ["tc"]
     }

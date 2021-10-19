@@ -20,7 +20,7 @@ When(
   }
 );
 
-// Step to type a specific value into an input field.Ư
+// Step to type a specific value into an input field.
 // Please use the name of the input field as the selector.
 // In case the name is not given, adjust the method to look at the id of the input field.
 When(

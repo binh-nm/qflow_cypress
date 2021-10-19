@@ -100,11 +100,14 @@ export function fillFieldWithValue(
       break;
     }
     case 'radio': {
-      const selector = `label[for="${testDataValue}"]`;
-      cy.get(selector).click({
-        timeout: 10000
+      const selector = `div[id="${testDataKey}"]`;
+      cy.get(selector)
+      .should('be.visible')
+      .within(() => {
+        cy.get(`label[for="${testDataValue}"]`).click({
+          timeout: 10000
+        })
       });
-      // cy.wait(1000);
       break;
     }
     case 'multiSelect':
@@ -170,7 +173,6 @@ export function fillFieldWithValue(
       .within(() => {
         cy.get('button').should('have.text', testDataValue).click();
       });
-      cy.wait(1500);
       break;  
     default:
       cy.log('field_type is invalid');
